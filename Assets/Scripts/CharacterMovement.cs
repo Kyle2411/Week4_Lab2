@@ -30,17 +30,16 @@ public class CharacterMovement : MonoBehaviour
     {
          
         if(controller.velocity.magnitude == 0){
-           // Debug.Log("idle");
+          
             animator.SetFloat("CharacterSpeed", 0);
         }
         else if (walkSpeed == GetMovementSpeed()){
 
-            //Debug.Log("walk");
             animator.SetFloat("CharacterSpeed", 0.5f);
         }
         else if (runSpeed == GetMovementSpeed()){
 
-       // Debug.Log("run");
+
             animator.SetFloat("CharacterSpeed", 1);
         }
            
